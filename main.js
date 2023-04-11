@@ -1,5 +1,22 @@
-/* <div class="product-item on-sale">
-                <img src="images/huawei-1.jpg" alt="">
+
+
+
+
+
+const currentProducts = products            
+
+const productsSection = document.querySelector('.products');
+
+
+
+const renderProducts = (items) => {
+    for(let i = 0; i < items.length; i++){
+        const newProduct = document.createElement ('div');
+        newProduct.className = `product-item ${items[i].sale ? "on-sale": ""}`
+        newProduct.innerHTML = `
+
+
+        <img src="${items[i].image}" alt="product-image"/>
                 <p class="product-name"> Huawei P20</p>
                 <p class="product-description ">
                     xxxxxxxxxxxajkshdakjsdhalkjh ajhsdkjash kj ajkshdkja 
@@ -12,7 +29,13 @@
                     <span class="sale">2700.01 usd</span>
                 </div>
                 <button class="product-add-to-basket">add to basket</button>
-                <p class="product-item-sale-info">Promotion</p>
-            </div>*/
+                <p class="product-item-sale-info">Promotion</p>`;
 
-            
+                productsSection.appendChild(newProduct);
+    }
+};
+
+
+
+
+document.onload = renderProducts(currentProducts);
