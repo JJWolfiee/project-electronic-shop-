@@ -9,3 +9,175 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 30px;
+}
+
+.header-title span:first-child {
+    color: yellow;
+    margin-right: 5px;
+}
+
+.header-title{
+    display: flex;
+}
+
+.header-title span:last-child {
+    background-color: yellow;
+    color: black;
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: max-content;
+    margin-left: 10px;
+    padding: 0px 4px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    margin-left: 50px;
+    
+
+}
+
+.search-bar-input {
+    min-width: 350px;
+    font-size: 18px;
+    padding-left: 8px;
+}
+
+.search-button {
+    background-color: yellow;
+    display: flex;
+}
+
+
+.header-basket {
+    display: flex;
+    align-items: end;
+    font-size: 20px;
+    gap: 5px;
+    
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 15px;
+
+}
+
+.categories-title {
+    font-size: 25px;
+    letter-spacing: 1px;
+    
+
+}
+
+.categories-items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+    justify-content: center;
+}
+
+.categories-items button {
+    font-size: 20px;
+    padding: 5px 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+.categories-items button:hover{
+    background-color: black;
+    color: yellow;
+    border-radius: 15px;  
+}
+
+
+.categories-items button.active {
+    background-color: black;
+    color: yellow;
+    border-radius: 15px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 30px;
+   
+   
+}
+.product-item {
+    max-width: 450px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: all 0.3 ease-in-out;
+}
+
+
+.product-item:hover {
+    box-shadow: 6px 11px 5px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 6px 11px 5px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 11px 5px -2px rgba(0,0,0,0.75);
+
+}
+
+.product-item img {
+    width: 260px;
+}
+
+.product-name {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.product-description {
+    color: rgb(70, 68, 68);
+    width: 90%;
+}
+
+.product-price {
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.product-price .sale {
+    display: none;
+}
+
+.product-item.on-sale .price {
+    color: black;
+    font-size: 15px;
+    text-decoration: line-through;
+    
+}
+
+.product-item.on-sale .sale {
+    display: block
+}
