@@ -19,7 +19,7 @@ const addToBasket = (e) => {
     ? basketClearBtn.classList.add("active")
     : basketClearBtn.classList.remove("active");
 
-  basketAmountSpan.innerHTML = `${basketTotal} zł`;
+  basketAmountSpan.innerHTML = `${basketTotal} GBP`;
 };
 
 const renderProducts = (items) => {
