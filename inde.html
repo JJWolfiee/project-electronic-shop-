@@ -1,55 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/image.png">
-    <title>Media Amator | Online shop</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/image.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Media Amator | Piotr Project </title>
+  </head>
+  <body>
     <header>
-        <h1 class="header-title">
-            <span>media</span>
-            <span>amator</span>
-            <span>&#x25BA;</span>
-        </h1>
-        <div class="search-bar">
-            <input type="text" class="search-bar-input"
-            placeholder="Search..."
-            autocomplete="off">
-        
-            <div class="search-button">
-                <img src="images/lupa.svg">
-            </div>
+      <h1 class="header-title">
+        <span>media</span>
+        <span>amator</span>
+        <span>&#x25BA;</span>
+      </h1>
+      <div class="search-bar">
+        <input
+          type="text"
+          class="search-bar-input"
+          placeholder="Search... "
+          autocomplete="off"
+        />
+        <div class="search-bar-icon">
+          <img src="./images/lupa.svg" alt="search-icon" />
         </div>
-            <div class="header-basket">
-                <img src="images/shopping_cart.svg">Basket
-            </div>
-        
+      </div>
+      <div class="header-basket">
+        <img src="./images/shopping_cart.svg" alt="shopping-cart-icon" />
+        <p class="basket-amount">Basket</p>
+        <button class="basket-clear-btn">x</button>
+      </div>
     </header>
-
     <main class="container">
-        <aside class="categories">
-            <h2 class="categories-title">Products</h2>
-            <section class="categories-items">
-                <button class="active">Category</button>
-                <button>Category</button>
-                <button>Category</button>
-                <button>Category</button>
-                <button>Category</button>
-            </section>
-        </aside>
-        <section class="products">
-            
-        </section>
-
+      <aside class="categories">
+        <h1 class="categories-title">Categories</h1>
+        <section class="categories-items"></section>
+      </aside>
+      <section class="products"></section>
+      <p class="empty-state">Product not found</p>
     </main>
-
-
     <script src="products.js"></script>
     <script src="main.js"></script>
-    
-</body>
+  </body>
 </html>
